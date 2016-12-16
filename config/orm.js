@@ -12,7 +12,7 @@ var orm ={
 	},
 
 	insertOne: function(table, cols, vals, callback){
-				var queryString = 'INSERT INTO' + table + '('+ cols =')' + "VALUES('"  [vals] + "')";
+				var queryString = 'INSERT INTO ' + table + '(' + cols + ')' + "VALUES('"  [vals] + "')";
 				console.log(queryString);
 
 				connection.query(queryString, vals, function(err, result){
