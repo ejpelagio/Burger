@@ -7,7 +7,7 @@ var burger = {
 
 		selectAll: function (callback){
 					//selecAll function is use to load an display with DB data.
-					orm.selecAll('burgers', function(result){
+					orm.selectAll('burgers', function(result){
 						callback(result)
 					
 					});
