@@ -3,7 +3,7 @@ var connection = require('../config/connection.js');
 
 var orm ={ 
 	selectAll: function(table, callback){
-				var queryString = 'SELECT * FROM' + table + ";";
+				var queryString = 'SELECT * FROM ' + table + ";";
 
 				connection.query(queryString, function(err, result){
 					if (err) throw err;
@@ -11,8 +11,8 @@ var orm ={
 					});
 	},
 
-	insertOne: function(table, col, vals, callback){
-				var queryString = 'INSERT INTO' + table + ('+ cols =') + "VALUES('" = [vals] + "')";
+	insertOne: function(table, cols, vals, callback){
+				var queryString = 'INSERT INTO' + table + '('+ cols =')' + "VALUES('"  [vals] + "')";
 				console.log(queryString);
 
 				connection.query(queryString, vals, function(err, result){
@@ -23,7 +23,7 @@ var orm ={
 	},
 
 	updateOne: function(table, colName, burgerId, callback){
-				var queryString = "UPDATE" + table + "SET" + colName + !!!! + "WHERE id=" + burgerId;
+				var queryString = "UPDATE " + table + " SET" + colName + "=1 " + " WHERE id= " + burgerId;
 				console.log(queryString);
 
 				connection.query(queryString, function(err, result){
